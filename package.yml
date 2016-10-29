@@ -1,0 +1,16 @@
+name       : python3-jedi
+version    : 0.9.0
+release    : 1
+source     :
+    - https://pypi.python.org/packages/3a/37/629080b92b87bc65e3b1b4f5d539e22aa5dc45637eab0dd4b0cd8cf236c2/jedi-0.9.0.tar.gz : 3b4c19fba31bdead9ab7350fb9fa7c914c59b0a807dcdd5c00a05feb85491d31
+license    : MIT
+component  : programming.python
+summary    : An autocompletion tool for Python that can be used for text editors.
+description: |
+    An autocompletion tool for Python that can be used for text editors.
+builddeps  :
+    - pkgconfig(python-3.5)
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
