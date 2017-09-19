@@ -6,6 +6,7 @@
             <Email>ewan.paterson@hotmail.co.uk</Email>
         </Packager>
         <License>MIT</License>
+        <License>Python-2.0</License>
         <PartOf>programming.python</PartOf>
         <Summary xml:lang="en">An autocompletion tool for Python that can be used for text editors.</Summary>
         <Description xml:lang="en">An autocompletion tool for Python that can be used for text editors.
@@ -150,8 +151,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2017-07-15</Date>
+        <Update release="3">
+            <Date>2017-09-17</Date>
             <Version>0.10.2</Version>
             <Comment>Packaging update</Comment>
             <Name>Ewan Paterson</Name>
