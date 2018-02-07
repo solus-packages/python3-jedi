@@ -1,6 +1,6 @@
 name       : python3-jedi
 version    : 0.11.1
-release    : 6
+release    : 7
 source     :
     - https://github.com/davidhalter/jedi/archive/v0.11.1.tar.gz : 748cdbac613a7659b1e83cc3b705f9f811580135cc690d16dafcbf8cabd4932f
 license    : MIT
