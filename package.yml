@@ -1,18 +1,22 @@
 name       : python3-jedi
-version    : 0.13.3
-release    : 9
+version    : 0.15.1
+release    : 10
 source     :
-    - https://github.com/davidhalter/jedi/archive/v0.13.3.tar.gz : e82c4933b4c9717276fa6528b91d7c667463ac2773ccecd076e6b068c70a6e0e
+    - git|https://github.com/davidhalter/jedi.git : v0.15.1
 license    : MIT
 component  : programming.python
 summary    : An autocompletion tool for Python that can be used for text editors.
 description: |
     An autocompletion tool for Python that can be used for text editors.
 builddeps  :
-    - pkgconfig(python3)
+    - python-parso
+    - python-pytest
 rundeps    :
     - python-parso
 build      : |
     %python3_setup
 install    : |
     %python3_install
+check      : |
+    ln -sv jedi.git $workdir/../jedi
+    %python3_test pytest3 -v
